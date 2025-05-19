@@ -5,7 +5,7 @@ from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # === Настройки ===
-BOT_TOKEN = "7822163888:AAE7-SSSDO7NjL6ka65gKXg9nF6e7UVyX2o"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 DATA_FILE = "pushups.json"
 ADMIN_ID = 1983548472
 PUSHUP_DAILY_LIMIT = 1000

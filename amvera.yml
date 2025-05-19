@@ -1,4 +1,9 @@
-name: ""
-meta:
-  environment: docker
-  toolchain: {}
+app:
+  name: pushup-bot
+  docker:
+    build:
+      context: .
+    image: pushup-bot
+  env:
+    - name: BOT_TOKEN
+      value: ${BOT_TOKEN}
